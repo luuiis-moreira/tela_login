@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(45deg, #124578, #444);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.caixa--login {
+    width: 300px;
+    height: 400px;
+    background-color: #fff;
+    border-radius: 30px 10px;
+    box-shadow: 5px 2px 15px #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    transition: all 1s ease-in-out;
+}
+
+.title--login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title--login img {
+    width: 100px;
+    margin: 30px 0;
+}
+
+.title--login h1 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.input--login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.input--login-user,
+.input--login-password {
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    margin-top: 12px;
+}
+
+.input--login-user input,
+.input--login-password input {
+    outline: none;
+    padding: 5px;
+    width: 80%;
+    font-weight: bold;
+    opacity: 0.5;
+    transition: all 0.4s ease-in-out;
+}
+
+.input--login-user input:focus,
+.input--login-password input:focus {
+    opacity: 1;
+}
+
+.input--login-user img,
+.input--login-password img {
+    margin-left: 5px;
+}
+
+.input--login-checkbox {
+    width: 80%;
+    font-size: 0.7rem;
+    font-style: oblique;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.input--login-checkbox div {
+    display: flex;
+}
+
+.input--login-checkbox div a,
+.cadastrar--login a {
+    text-decoration: none;
+}
+
+.input--login-checkbox div span {
+    margin-left: 5px;
+}
+
+.btn--login {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    margin-top: 30px;
+    padding: 10px 25px;
+    border-radius: 8px;
+    background: linear-gradient(45deg, #204e7c, #222);
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn--login:hover {
+    background: linear-gradient(225deg, #204e7c, #222);
+    box-shadow: 5px 2px 10px #000;
+}
+
+.btn--login:hover button {
+    color: #fff;
+}
+
+.btn--login button {
+    background: none;
+    color: #aaa;
+    cursor: pointer;
+}
+
+.btn--login button:hover {}
+
+.btn--login img {
+    margin-right: 10px;
+}
+
+.cadastrar--login {
+    text-align: center;
+    width: 90%;
+    font-size: 0.7rem;
+    position: absolute;
+    bottom: 8px;
+}
+
+@media (max-width: 300px) {
+    .caixa--login {
+        padding: 0 5px;
+        height: 450px;
+    }
+    .title--login h1 {
+        font-size: 1.3rem;
+    }
+    .input--login-user,
+    .input--login-password {
+        width: 100%;
+    }
+    .input--login-checkbox {
+        flex-direction: column;
+    }
+    .cadastrar--login {
+        display: flex;
+        flex-direction: column;
+    }
+    .btn--login {
+        padding: 5px 10px;
+    }
+    .title--login img {
+        width: 80px;
+    }
+}
