@@ -117,7 +117,7 @@ body {
 
 .btn--login:hover {
     background: linear-gradient(225deg, #204e7c, #222);
-    box-shadow: 5px 2px 10px #000;
+    box-shadow: 5px 2px 5px #000;
 }
 
 .btn--login:hover button {
